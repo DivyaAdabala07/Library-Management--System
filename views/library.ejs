@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Management System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="https://us.123rf.com/450wm/pixbold/pixbold2308/pixbold230800050/211129853-initial-letter-d-education-logo-book-concept-university-academy-graduation-logo-template-design.jpg?ver=6"
+          alt="logo"
+        />
+      </a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">books</a>
+        <a href="#products">publications</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+      <div class="headers">
+        <div class="cart-items-container">
+          <div class="cart">
+            <div class="cart-item">
+              <span class="fas fa-times"></span>
+              <img
+                src="https://www.indicinspirations.com/cdn/shop/products/wings-of-fire-an-autobiography-of-abdul-kalam-books-908170.jpg?v=1627154447"
+                alt="cart"
+              />
+              <div class="content">
+                <h3>Wings Of Fire</h3>
+                <div class="price"></div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <span class="fas fa-times"></span>
+              <img
+                src="https://m.media-amazon.com/images/I/91ySKNxJDML._AC_UF894,1000_QL80_.jpg"
+                alt="cart"
+              />
+              <div class="content">
+                <h3>The Company Of Trees</h3>
+                <div class="price"></div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <span class="fas fa-times"></span>
+              <img
+                src="https://m.media-amazon.com/images/I/71sH3vxziLL._AC_UF1000,1000_QL80_.jpg"
+                alt="cart"
+              />
+              <div class="content">
+                <h3>Harry Potter</h3>
+                <div class="price"></div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <span class="fas fa-times"></span>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd-449kEYno8W6blid9BZPnkhT6EWCblMVew&usqp=CAU"
+                alt="cart"
+              />
+              <div class="content">
+                <h3>Pride & Prejudice</h3>
+                <div class="price"></div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout">
+            <a href="/thankyou" class="btn" id="checkout-btn" style="display: block">Checkout Now</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Online Library</h3>
+        <p>
+          "Online libraries are the modern-day sanctuaries of wisdom, accessible
+          to all who seek knowledge, without boundaries or limitations."
+        </p>
+        <a href="#" class="btn">get yours now</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h1 class="heading"><span>about</span> us</h1>
+      <div class="row">
+        <div class="image">
+          <img
+            src="https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_391052-12859.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h3>what makes our books special?</h3>
+          <p>
+            Our mission is to provide access to information, support lifelong
+            learning, and promote the joy of reading. We strive to create a
+            welcoming environment where everyone can explore new ideas, conduct
+            research, and connect with their community.
+          </p>
+          <a href="#" class="btn">learn more</a>
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <h1 class="heading">our <span>books</span></h1>
+      <div class="box-container" id="product-container">
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/51HTieS6nkL.jpg" alt="">
+            <h3 data-title="C programming">C programming</h3>
+            <div class="price"><span></span></div>
+            <a href="#menu" class="btn add-to-cart" data-title="C programming" data-imgurl="https://m.media-amazon.com/images/I/51HTieS6nkL.jpg">add to cart</a>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/originals/cc/fe/56/ccfe56217b4fde6bef1de620caf79fc4.png" alt="">
+            <h3 data-title="Python">Python</h3>
+            <div class="price"><span></span></div>
+            <a href="#menu" class="btn add-to-cart" data-title="Python" data-imgurl="https://i.pinimg.com/originals/cc/fe/56/ccfe56217b4fde6bef1de620caf79fc4.png">add to cart</a>
+        </div>
+        <div class="box">
+            <img src="https://5.imimg.com/data5/XX/YM/MY-4078569/java-programming-book.png" alt="">
+            <h3 data-title="Java">Java</h3>
+            <div class="price"><span></span></div>
+            <a href="#menu" class="btn add-to-cart" data-title="Java" data-imgurl="https://5.imimg.com/data5/XX/YM/MY-4078569/java-programming-book.png">add to cart</a>
+        </div>
+        <div class="box">
+            <img src="https://4.imimg.com/data4/KX/DO/MY-8205359/simplified-approach-to-dbms.png" alt="">
+            <h3 data-title="Database Management System">Database Management System</h3>
+            <div class="price"><span></span></div>
+            <a href="#menu" class="btn add-to-cart" data-title="Database Management System" data-imgurl="https://4.imimg.com/data4/KX/DO/MY-8205359/simplified-approach-to-dbms.png">add to cart</a>
+        </div>
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/51gsJMovFkL._SY385_.jpg" alt="">
+            <h3 data-title="Data Structures">Data Structures</h3>
+            <div class="price"><span></span></div>
+            <a href="#menu" class="btn add-to-cart" data-title="Data Structures" data-imgurl="https://m.media-amazon.com/images/I/51gsJMovFkL._SY385_.jpg">add to cart</a>
+        </div>
+        <div class="box">
+            <img src="https://i1.rgstatic.net/publication/229163615_Software_Engineering_Principles_And_Practice/links/549fb46d0cf257a635fe77df/largepreview.png" alt="">
+            <h3 data-title="Software Engineering">Software Engineering</h3>
+            <div class="price"><span></span></div>
+            <a href="#menu" class="btn add-to-cart" data-title="Software Engineering" data-imgurl="https://i1.rgstatic.net/publication/229163615_Software_Engineering_Principles_And_Practice/links/549fb46d0cf257a635fe77df/largepreview.png">add to cart</a>
+        </div>
+    </div>
+    </section>
+    <section class="products" id="products">
+      <h1 class="heading">our <span>publications</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img
+              src="https://png.pngtree.com/template/20200807/ourmid/pngtree-color-matching-autumn-photography-book-cover-design-image_400413.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>Autumn Warm</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$15.99 <span>$20.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6gFwUTM8Oc9gSSPEkFnY90wg5e_s43k_-ii5zgNF1OykSf5vtr5PuA7vp3CDHJF10WUI&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>Sweet Afton</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$25.99 <span>$30.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Constitution_of_India_%28calligraphic%29_Cover.png/427px-Constitution_of_India_%28calligraphic%29_Cover.png?20150512141012"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>Constitution Of India</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$150.99 <span>$200.99</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review" id="review">
+      <h1 class="heading">customer's <span>review</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="https://img.freepik.com/premium-photo/image-25-year-old-indian-man-that-is-smiling-camera_878783-7217.jpg"
+            class="user"
+            alt=""
+          />
+          <h3>john</h3>
+          <img
+            src="https://spiegel.cpa/wp-content/uploads/bb-plugin/cache/Quotation-marks-gold-circle.png"
+            alt=""
+            class="quote"
+          />
+          <p>
+            I love this online library! It has an extensive collection of books
+            across various genres, and the user interface is very user-friendly.
+            Highly recommended!
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww&w=1000&q=80"
+            class="user"
+            alt=""
+          />
+          <h3>Catherene</h3>
+          <img
+            src="https://spiegel.cpa/wp-content/uploads/bb-plugin/cache/Quotation-marks-gold-circle.png"
+            alt=""
+            class="quote"
+          />
+          <p>
+            As a student, this online library has been a game-changer. I can
+            access academic resources and textbooks, saving me a lot of money
+            and hassle. It's a must-have for anyone in education.
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwbWFsZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            class="user"
+            alt=""
+          />
+          <h3>Alfred</h3>
+          <img
+            src="https://spiegel.cpa/wp-content/uploads/bb-plugin/cache/Quotation-marks-gold-circle.png"
+            alt=""
+            class="quote"
+          />
+          <p>
+            I've been using this online library for research purposes, and the
+            access to academic journals and research papers is invaluable. It's
+            a great resource for students and scholars.
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.2092757808477!2d81.51993757352017!3d16.56597042595169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37cd4e8d1d1d8d%3A0xab52da15615ac690!2sVishnu%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1696617166840!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form action="">
+          <h3>get in touch</h3>
+          <div class="inputBox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="name" />
+          </div>
+          <div class="inputBox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="inputBox">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="number" />
+          </div>
+          <input type="submit" value="contact now" class="btn" />
+        </form>
+      </div>
+    </section>
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our <span>blogs</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://3.bp.blogspot.com/-J7L7Hud9nOM/VJsSJ1f9QwI/AAAAAAAAD0o/3ccnrUYcAZUDG98g2Vu-jzpoLTNoRKoXQCPcBGAYYCw/s1600/LIBRARIANSHIP%2BSTUDIES%2B-%2BLOGO.png"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Timeless Magic Of Reading</a>
+            <span>by admin / 22nd march, 2022</span>
+            <p>IT - Where Passion Meets Profession</p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="http://travelinlibrarian.info/wp-content/uploads/2023/10/Unquiet-Spirits-Essays-by-Asian-Women-in-Horror-by-Lee-Murra-660x577.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <a href="#" class="title">A Journy Through Stacks</a>
+            <span>by admin / 7th july, 2021</span>
+            <p>Incrediable Book</p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="https://jennyarch.files.wordpress.com/2023/07/snowhorses.jpg?w=184&h=177"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Beyond The Shelves</a>
+            <span>by admin / 4th Nov, 2023</span>
+            <p>Explore A World Of Adventure</p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="share">
+        <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/feed/" class="fab fa-linkedin"></a>
+        <a href="https://in.pinterest.com/" class="fab fa-pinterest"></a>
+      </div>
+      <div class="links">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">books</a>
+        <a href="#products">publications</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+      </div>
+      <div class="credit">
+        created by <span>divya and martha</span> | all rights reserved
+      </div>
+    </section>
+    <script src="/home.js"></script>
+  </body>
+</html>
